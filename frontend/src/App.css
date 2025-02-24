@@ -24,8 +24,30 @@
   color: white;
 }
 
+.App-title {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-title {
+    animation: App-title-spin infinite 5s linear;
+  }
+}
+
 .App-link {
   color: #fffff1;
+}
+
+@keyframes App-title-spin {
+  from{
+    transform: rotate3d(1, 10, 1, 360deg);
+  }
 }
 
 @keyframes App-logo-spin {
